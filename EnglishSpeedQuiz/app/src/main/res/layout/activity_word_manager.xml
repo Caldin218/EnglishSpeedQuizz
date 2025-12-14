@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tên Chủ Đề"/>
+
+        <ImageButton
+            android:id="@+id/btnTrash"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_delete_trash"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDeleteTools"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#FFEBEE"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkSelectAll"
+            android:text="Tất cả"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnCancelDelete"
+            android:text="Hủy"
+            android:textSize="12sp"
+            android:backgroundTint="#9E9E9E"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:id="@+id/btnConfirmDelete"
+            android:text="XÓA"
+            android:textSize="12sp"
+            android:backgroundTint="#F44336"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/edtEn" android:hint="Nhập từ Tiếng Anh" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/edtVn" android:hint="Nhập nghĩa Tiếng Việt" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btnAddWord" android:text="Lưu từ này" android:layout_marginTop="5dp" android:backgroundTint="#673AB7" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:text="BẮT ĐẦU CHƠI GAME"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp">
+        <Switch android:id="@+id/swReviewMode" android:text="Chế độ ôn tập (>10 lỗi)" android:textSize="14sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/txtReviewCount" android:text="(0)" android:textColor="#F44336" android:textStyle="bold" android:layout_marginStart="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_section_header"
+        android:padding="12dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/txtCount"
+            android:text="Danh sách từ vựng:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#1565C0"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imgArrow"
+            android:src="@drawable/ic_arrow_drop_down"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvWords"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

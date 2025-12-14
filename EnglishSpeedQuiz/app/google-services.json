@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "765112300414",
+    "project_id": "englishspeedquiz",
+    "storage_bucket": "englishspeedquiz.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765112300414:android:7fb934bd282fc18b2cf92f",
+        "android_client_info": {
+          "package_name": "com.example.englishspeedquiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN5GDuINpel0GORmx-usE54YrA6Lq7N9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
